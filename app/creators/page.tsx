@@ -27,7 +27,8 @@ export default async function Creators({
 
   return (
     <div className="p-10">
-      <div className="w-[600px]">
+      <h1 className="text-2xl sm:text-3xl font-semibold pb-6">Creators</h1>
+      <div className="w-full lg:w-[600px]">
         <Search placeholder="Search&#8230;" />
       </div>
       <div className="flex flex-col gap-6 pt-10 justify-center">

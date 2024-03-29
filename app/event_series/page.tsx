@@ -49,6 +49,7 @@ export default async function Page({
 
   return (
     <PaginationPage
+      pageTitle="Event Series"
       eventSeries={eventSeries}
       query={query}
       currentPage={currentPage}
