@@ -55,19 +55,17 @@ export default async function Page({
     });
 
   return (
-    <div className="flex flex-col gap-6 mx-auto justify-center sm:p-10">
-      <div className="flex flex-col sm:flex-row gap-4 justify-between px-10">
+    <div className="flex flex-col gap-6 mx-auto justify-center pt-10">
+      <div className="flex gap-4 justify-between px-10 items-center">
         <h1 className="text-2xl sm:text-3xl font-semibold">
           Event Series Workshop
         </h1>
-        <div className="">
-          <Link
-            className={buttonVariants({ variant: 'default' })}
-            href="/workshop/create"
-          >
-            Create New Event Series
-          </Link>
-        </div>
+        <Link
+          className={buttonVariants({ variant: 'default' })}
+          href="/workshop/create"
+        >
+          Create New Event Series
+        </Link>
       </div>
       <div className="flex flex-col">
         <div className="w-full flex flex-col lg:flex-row gap-4 mx-auto px-10">

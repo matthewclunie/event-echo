@@ -17,11 +17,13 @@ export default async function PaginationPage({
   query,
   currentPage,
   totalPages,
+  pageTitle,
 }: {
   query?: string;
   currentPage: number;
   eventSeries: SeriesWithThumbnail[];
   totalPages: number;
+  pageTitle: string;
 }) {
   const categories = await prisma.eventCategory.findMany({
     orderBy: {
@@ -40,12 +42,15 @@ export default async function PaginationPage({
 
   return (
     <div className="flex flex-col">
+      <h1 className="text-2xl sm:text-3xl font-semibold pt-10 pl-10">
+        {pageTitle}
+      </h1>
       {query !== undefined && (
-        <div className="w-full flex flex-col sm:flex-row gap-4 mx-auto p-10 pb-0">
+        <div className="w-full flex flex-col lg:flex-row gap-4 mx-auto pt-6 px-10">
           <div className="grow">
             <Search placeholder="Search&#8230;" />
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row gap-4">
             <CategorySelect
               categories={categories}
               subcategories={subcategories}

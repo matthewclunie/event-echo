@@ -29,7 +29,7 @@ const EventSeriesCard = (props: {
         <Link href={link}>
           {props.thumbnails && !imageError && (
             <Image
-              className="rounded-sm absolute top-0 left-0 w-full object-fill mix-blend-darken dark:mix-blend-lighten blur-sm transition-all duration-500 opacity-25 hover:opacity-5 hover:scale-125"
+              className="rounded-sm absolute top-0 left-0 w-full object-fill mix-blend-darken dark:mix-blend-lighten blur-[2px] transition-all duration-500 opacity-25 hover:opacity-5 hover:scale-125"
               alt="video thumbnail"
               src={props.thumbnails.medium.url}
               height={props.thumbnails.medium.height}

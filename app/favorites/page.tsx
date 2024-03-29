@@ -46,6 +46,7 @@ const Favorites = async ({
     <>
       {favoritedSeries.length > 0 ? (
         <PaginationPage
+          pageTitle="Favorites"
           eventSeries={favoritedSeries}
           currentPage={currentPage}
           totalPages={totalFavoritedPages}

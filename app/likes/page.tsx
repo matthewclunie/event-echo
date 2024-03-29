@@ -39,6 +39,7 @@ export default async function Likes({
     <>
       {likedSeries.length > 0 ? (
         <PaginationPage
+          pageTitle="Likes"
           eventSeries={likedSeries}
           currentPage={currentPage}
           totalPages={totalLikedPages}
