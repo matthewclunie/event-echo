@@ -1,4 +1,4 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import authOptions from '@/app/api/auth/authoptions';
 import prisma from '@/db';
 import { Session, getServerSession } from 'next-auth';
 import EditSeriesContainer from './edit_series_container';

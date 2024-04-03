@@ -3,7 +3,7 @@ import prisma from '@/db';
 import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 import { Suspense } from 'react';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+import authOptions from '../api/auth/authoptions';
 import LoginPrompt from '../components/login_prompt';
 import WorkshopPagination from '../components/pagination/workshop_pagination';
 import CategorySelect from '../components/search/category_select';

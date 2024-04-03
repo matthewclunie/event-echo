@@ -1,4 +1,4 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import authOptions from '@/app/api/auth/authoptions';
 import LoginPrompt from '@/app/components/login_prompt';
 import AddEventSeriesForm from '@/app/workshop/components/add_event_series_form';
 import { getServerSession } from 'next-auth';

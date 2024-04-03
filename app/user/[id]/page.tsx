@@ -1,4 +1,4 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import authOptions from '@/app/api/auth/authoptions';
 import SubscribeButton from '@/app/components/buttons/subscribe_button';
 import LoadSeries from '@/app/components/infinite_scroll/load_series';
 import {
@@ -8,7 +8,6 @@ import {
 } from '@/app/components/ui/avatar';
 import { buttonVariants } from '@/app/components/ui/button';
 import { Separator } from '@/app/components/ui/separator';
-import { Skeleton } from '@/app/components/ui/skeleton';
 import {
   Tabs,
   TabsContent,

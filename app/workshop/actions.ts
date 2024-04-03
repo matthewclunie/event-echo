@@ -2,7 +2,7 @@
 
 import prisma from '@/db';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+import authOptions from '../api/auth/authoptions';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
