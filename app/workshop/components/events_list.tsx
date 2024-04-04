@@ -2,12 +2,7 @@
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 
-interface Props {
-  id: number;
-}
-
-const EventList = ({ id }: Props) => {
-  // const events = await fetch()
+const EventList = () => {
   return (
     <div className="flex flex-col gap-6 mx-auto justify-center p-10 xl:w-1/2">
       <div className="flex justify-between">
@@ -21,19 +16,6 @@ const EventList = ({ id }: Props) => {
           </Link>
         </div>
       </div>
-      {/* {series.map((s) => (
-        <Card key={s.id}>
-          <CardHeader>
-            <CardTitle>
-              <Link href={`/event_series/${s.id}`}>{s.title}</Link>
-            </CardTitle>
-            <CardDescription>{s.description}</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <DeleteEventSeriesForm id={s.id} title={s.title} />
-          </CardFooter>
-        </Card>
-      ))} */}
     </div>
   );
 };
