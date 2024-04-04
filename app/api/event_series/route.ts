@@ -2,7 +2,7 @@ import { SeriesWithThumbnail } from '@/app/components/pagination/actions';
 import { Thumbnails } from '@/app/workshop/[id]/page';
 import prisma from '@/db';
 import { getServerSession } from 'next-auth';
-import authOptions from '../auth/authoptions';
+import authOptions from '../auth/auth_options';
 
 type OrderMap = {
   [key: string]: any;

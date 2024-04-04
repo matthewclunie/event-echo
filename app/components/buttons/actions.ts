@@ -1,6 +1,6 @@
 'use server';
 
-import authOptions from '@/app/api/auth/authoptions';
+import authOptions from '@/app/api/auth/auth_options';
 import prisma from '@/db';
 import { getServerSession } from 'next-auth';
 import { revalidatePath } from 'next/cache';

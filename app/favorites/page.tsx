@@ -1,5 +1,5 @@
 import { getServerSession } from 'next-auth';
-import authOptions from '../api/auth/authoptions';
+import authOptions from '../api/auth/auth_options';
 import LoginPrompt from '../components/login_prompt';
 import {
   getFavoritedSeries,

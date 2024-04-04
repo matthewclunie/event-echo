@@ -1,4 +1,4 @@
-import authOptions from '@/app/api/auth/authoptions';
+import authOptions from '@/app/api/auth/auth_options';
 import AccessDenied from '@/app/components/access_denied';
 import FavoriteButton from '@/app/components/buttons/favorite_button';
 import LikeButton from '@/app/components/buttons/like_button';

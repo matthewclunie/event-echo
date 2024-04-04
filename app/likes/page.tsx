@@ -4,7 +4,7 @@ import {
   getTotalLikedPages,
 } from '../components/pagination/actions';
 import PaginationPage from '../components/pagination/pagination_page';
-import authOptions from '../api/auth/authoptions';
+import authOptions from '../api/auth/auth_options';
 import LoginPrompt from '../components/login_prompt';
 import NoContentDisplay from '../components/no_content_display/no_content_display';
 
