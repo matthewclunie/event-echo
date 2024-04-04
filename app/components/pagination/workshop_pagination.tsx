@@ -3,11 +3,10 @@ import EventSeriesCard from '../event_series_card';
 import {
   SeriesWithThumbnail,
   getFilteredEventSeries,
-  getTotalPages,
   getWorkshopTotalPages,
 } from './actions';
 import PaginationComponent from './pagination';
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import authOptions from '@/app/api/auth/authoptions';
 
 export default async function WorkshopPagination({
   query,

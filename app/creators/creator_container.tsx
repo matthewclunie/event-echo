@@ -1,5 +1,3 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
-import { getServerSession } from 'next-auth';
 import PaginationComponent from '../components/pagination/pagination';
 import { getCreators, getCreatorsTotalPages } from './actions';
 import CreatorCard from './creator_card';
