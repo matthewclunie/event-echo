@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import ModeToggleButton from '../nav_bar/mode_toggle_button/mode_toggle_button';
-import authOptions from '@/app/api/auth/authoptions';
+import authOptions from '@/app/api/auth/auth_options';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { getServerSession } from 'next-auth';
 import { Button } from '../ui/button';

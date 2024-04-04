@@ -6,7 +6,7 @@ import {
   getWorkshopTotalPages,
 } from './actions';
 import PaginationComponent from './pagination';
-import authOptions from '@/app/api/auth/authoptions';
+import authOptions from '@/app/api/auth/auth_options';
 
 export default async function WorkshopPagination({
   query,

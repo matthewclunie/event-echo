@@ -1,4 +1,4 @@
-import authOptions from '@/app/api/auth/authoptions';
+import authOptions from '@/app/api/auth/auth_options';
 import SubscribeButton from '@/app/components/buttons/subscribe_button';
 import LoadSeries from '@/app/components/infinite_scroll/load_series';
 import {
