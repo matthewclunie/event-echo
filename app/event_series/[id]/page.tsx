@@ -19,14 +19,12 @@ import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-export const dynamic = 'force-dynamic';
-
-export async function generateStaticParams() {
-  const eventSeries = await prisma.eventSeries.findMany({});
-  return eventSeries.map((series) => {
-    id: series.id;
-  });
-}
+// export async function generateStaticParams() {
+//   const eventSeries = await prisma.eventSeries.findMany({});
+//   return eventSeries.map((series) => {
+//     id: series.id;
+//   });
+// }
 
 export default async function EventSeriesPage({
   params,
