@@ -19,12 +19,14 @@ import { CircleUserRound } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 
-// export async function generateStaticParams() {
-//   const users = await prisma.user.findMany({});
-//   return users.map((user) => {
-//     id: user.id;
-//   });
-// }
+export const dynamic = 'force-dynamic';
+
+export async function generateStaticParams() {
+  const users = await prisma.user.findMany({});
+  return users.map((user) => {
+    id: user.id;
+  });
+}
 
 export default async function UserProfile({
   params,
