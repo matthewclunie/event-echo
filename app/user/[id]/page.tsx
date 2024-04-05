@@ -19,7 +19,7 @@ import { CircleUserRound } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import Link from 'next/link';
 
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams() {
   const users = await prisma.user.findMany({});
