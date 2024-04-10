@@ -25,47 +25,9 @@ async function main() {
       console.error(`Error creating records from ${fileName}:`, error);
     }
   }
-  const matt = await prisma.user.upsert({
-    where: { email: 'matthew.clunie@gmail.com' },
-    update: {},
-    create: {
-      email: 'matthew.clunie@gmail.com',
-      name: 'matt clunie',
-      username: 'matt',
-    },
-  });
-  const rob = await prisma.user.upsert({
-    where: { email: 'rpdonigian@gmail.com' },
-    update: {},
-    create: {
-      email: 'rpdonigian@gmail.com',
-      name: 'robert donigian',
-      username: 'rob',
-    },
-  });
-  const rich = await prisma.user.upsert({
-    where: { email: 'richdoherty7@gmail.com' },
-    update: {},
-    create: {
-      email: 'richdoherty7@gmail.com',
-      name: 'rich doherty',
-      username: 'rich',
-    },
-  });
-  let userId = 0;
-  await prisma.user
-    .findFirst({
-      where: { email: 'matthew.clunie@gmail.com' },
-    })
-    .then((data) => {
-      userId = data!.id;
-    });
+
   await createRecordsFromJSON('users.json', prisma.user);
   console.log('CREATED USERS DATA');
-  console.log(matt);
-  console.log(rob);
-  console.log(rich);
-
   await createRecordsFromJSON('eventCategories.json', prisma.eventCategory);
   await createRecordsFromJSON(
     'eventSubCategories.json',
